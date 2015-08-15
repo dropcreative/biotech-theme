@@ -3,70 +3,10 @@
 @import "neat"
 @import "variables"
 @import "mixins"
+@import "navigation"
+@import "slideshow"
 @import "grid-items"
 @import "footer"
-
-IMG
-    @include image-rendering(optimizeSpeed)
-
-.social-container
-    @include outer-container(100%)
-    background: $bio-dark
-    height: $small
-    a
-        @include light-icon-color
-        i
-            font-size: $small
-    .half
-        @include span-columns(6)
-        padding-left: $tiny-padding
-        color: $light-text
-    .second-half
-        @include span-columns(6)
-        padding-right: $tiny-padding
-        text-align: right
-
-
-// NAVIGATION
-.main-navigation
-    font-family: $google-font
-    a
-        text-decoration: none
-    @include outer-container(100%)
-    height: $small-mid
-    background: $light
-    .navigation-wrapper
-        @include span-columns(12)
-        .navigation-menu-button
-            text-align: right
-            @include small-hide
-        .nav-logo
-            display: inline-block
-            padding-left: $tiny-padding
-            img
-                height: 55px
-        nav
-            @include small-show
-            float: right
-        li
-            z-index: 1000
-            display: inline
-            float: right
-            padding: 0 5px 0 2px
-            @include submenu
-            a
-                color: $dark-text
-                background: $light
-                border: 2px solid $bio-dark
-                text-transform: uppercase
-                padding: 5px 5px 5px 5px
-                &:hover
-                    color: $light-text
-                    background: $bio-dark
-
-
-
-@import "slideshow"
 
 
 //    @include media ($large-screen)

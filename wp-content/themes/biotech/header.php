@@ -44,7 +44,9 @@
                             <img src="<?php echo get_bloginfo('template_directory');?>/img/logo.png" alt="Logo Image">
                         </a>
                     </div>
+                    <div class="mobile-nav-wrapper">
                     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+                    </div>
                     <nav role="navigation">
                         <ul id="js-navigation-menu" class="nav">
                             </li>

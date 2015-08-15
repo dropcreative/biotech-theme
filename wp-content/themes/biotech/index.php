@@ -75,7 +75,7 @@ get_header(); ?>
     <h1>Item</h1>
     <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
   </a>
-  <a href="javascript:void(0)" class="grid-item">
+  <a href="http://bryndesign.com" target="_blank" class="grid-item">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
     <h1>Last Grid Item</h1>
     <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
@@ -87,23 +87,9 @@ get_header(); ?>
 <!--Visual Grid Section End-->
 
 
-
-
-
-
-<!--
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php
-
-/*
-                     * Include the Post-Format-specific template for the content.
-                     * If you want to override this in a child theme, then include a file
-                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                     */
-get_template_part( 'template-parts/content', get_post_format() );
-        ?>
 
         <?php endwhile; ?>
 
@@ -111,14 +97,13 @@ get_template_part( 'template-parts/content', get_post_format() );
 
         <?php else : ?>
 
-        <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; ?>
--->
+
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<!--<?php get_sidebar(); ?>-->
+
 
 <?php get_footer(); ?>

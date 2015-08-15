@@ -19,7 +19,8 @@ $tiny-screen: em(300)
 
 //HEIGHT
 $tiny: 10px
-$tiny-small: 20px
+$tiny-small: 15px
+$very-small: 20px
 $small: 35px
 $small-mid: 60px
 $mid: 100px
@@ -41,7 +42,10 @@ $base-spacing: 1.5em !default
 $action-color: #0D8D8F !default
 $medium-screen: em(640) !default
 $large-screen: em(860) !default
-$footer-background: desaturate(darken($action-color, 20%), 30%)
+$footer-background: saturate(darken($action-color, 20%), 30%)
 $footer-color: $light-text
 $footer-link-color: transparentize($footer-color, 0.6)
 $footer-disclaimer-color: transparentize($footer-color, 0.6)
+
+IMG
+    @include image-rendering(optimizeSpeed)
