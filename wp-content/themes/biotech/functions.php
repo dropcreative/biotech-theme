@@ -140,6 +140,7 @@ function biotech_scripts() {
     wp_enqueue_script( 'jquery' );
 //    wp_enqueue_script( 'slideshow', get_template_directory_uri() . '/js/sss.js',  array( 'jquery' ), false, true );
     wp_enqueue_script( 'biotech-scripts', get_template_directory_uri() . '/js/biotechscripts.js',  array( 'jquery' ), false, true );
+    wp_enqueue_script( 'dropslides', get_template_directory_uri() . '/js/dropslides.js',  array( 'jquery' ), false, true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

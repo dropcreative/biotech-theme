@@ -149,40 +149,39 @@ IMG {
           color: #fff;
           background: #333; }
 
-.slideshow, .slideshow-second {
+#slideshow, #slideshow-second {
   width: 100%;
-  background: pink;
   list-style: none;
   padding: 0;
   margin-bottom: 0; }
   @media screen and (min-width: 18.75em) {
-    .slideshow, .slideshow-second {
+    #slideshow, #slideshow-second {
       height: 180px; } }
   @media screen and (min-width: 30em) {
-    .slideshow, .slideshow-second {
+    #slideshow, #slideshow-second {
       height: 260px; } }
   @media screen and (min-width: 48em) {
-    .slideshow, .slideshow-second {
+    #slideshow, #slideshow-second {
       height: 300px; } }
   @media screen and (min-width: 53.75em) {
-    .slideshow, .slideshow-second {
+    #slideshow, #slideshow-second {
       height: 400px; } }
-  .slideshow li, .slideshow-second li {
+  #slideshow li, #slideshow-second li {
     position: relative;
     overflow: hidden; }
     @media screen and (min-width: 18.75em) {
-      .slideshow li, .slideshow-second li {
+      #slideshow li, #slideshow-second li {
         height: 180px; } }
     @media screen and (min-width: 30em) {
-      .slideshow li, .slideshow-second li {
+      #slideshow li, #slideshow-second li {
         height: 260px; } }
     @media screen and (min-width: 48em) {
-      .slideshow li, .slideshow-second li {
+      #slideshow li, #slideshow-second li {
         height: 300px; } }
     @media screen and (min-width: 53.75em) {
-      .slideshow li, .slideshow-second li {
+      #slideshow li, #slideshow-second li {
         height: 400px; } }
-    .slideshow li img, .slideshow-second li img {
+    #slideshow li img, #slideshow-second li img {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -191,12 +190,13 @@ IMG {
       margin: auto;
       width: 100%; }
 
-.slideshow-second {
+#slideshow-second {
   height: 200px;
-  margin-top: 0; }
-  .slideshow-second li {
+  margin-top: 0;
+  background: #333; }
+  #slideshow-second li {
     height: 200px; }
-    .slideshow-second li .slideshow-text {
+    #slideshow-second li .slideshow-text {
       width: 80%;
       max-width: 800px;
       margin-left: auto;

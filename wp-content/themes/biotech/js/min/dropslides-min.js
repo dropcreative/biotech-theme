@@ -1,1 +1,1 @@
-!function($){$.fn.dropSlides=function(){}}(jQuery);
+!function($){$.fn.dropSlides=function(){$(".slide").fadeOut("slow")}}(jQuery);

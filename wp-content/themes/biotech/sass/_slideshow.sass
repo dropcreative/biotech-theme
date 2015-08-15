@@ -1,7 +1,6 @@
-.slideshow, .slideshow-second
+#slideshow, #slideshow-second
     @include slideshow-height
     width: 100%
-    background: pink
     list-style: none
     padding: 0
     margin-bottom: 0
@@ -18,9 +17,10 @@
             margin: auto
             width: 100%
 
-.slideshow-second
+#slideshow-second
     height: 200px
     margin-top: 0
+    background: $bio-dark
     li
         height: 200px
         .slideshow-text
@@ -30,3 +30,4 @@
             margin-right: auto
             color: $light
             background: $dark-overlay
+

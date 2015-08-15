@@ -27,12 +27,14 @@ get_header(); ?>
         <?php endif; ?>
 -->
 
-<ul class="slideshow">
-<li><img  src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg"/></li>
+<ul id="slideshow">
+<li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg"/></li>
+<li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image2.jpg"/></li>
+<li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image3.jpg"/></li>
 
 </ul>
 
-<ul class="slideshow-second">
+<ul id="slideshow-second">
 <li><div class="slideshow-text"><h2>TEXT SAMPLE</h2></div></li>
 
 </ul>
