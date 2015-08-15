@@ -9,10 +9,13 @@ $icon-light-hover: darken( $icon-light, 60% )
 $icon-dark: #333
 $icon-dark-hover: lighten( $icon-dark, 60% )
 
+$dark-overlay: rgba(0,0,0, .75)
+$light-overlay: rgba(255,155,255, .7)
 
 $large-screen: em(860)
 $medium-screen: em(768)
 $small-screen: em(480)
+$tiny-screen: em(300)
 
 //HEIGHT
 $tiny: 10px
@@ -87,3 +90,14 @@ $google-font: 'Raleway', sans-serif
     &:hover > .submenu
         display: block
 
+@mixin slideshow-height
+    @media screen and (min-width: $tiny-screen)
+        height: 180px
+    @media screen and (min-width: $small-screen)
+        height: 260px
+    @media screen and (min-width: $medium-screen)
+        height: 300px
+    @media screen and (min-width: $large-screen)
+        height: 400px
+
+@mixin social-conatiner-height

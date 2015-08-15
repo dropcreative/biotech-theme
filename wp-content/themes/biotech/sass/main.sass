@@ -3,6 +3,9 @@
 @import "neat"
 @import "variables"
 
+IMG
+    @include image-rendering(optimizeSpeed)
+
 .social-container
     @include outer-container(100%)
     background: $bio-dark
@@ -57,6 +60,8 @@
                 &:hover
                     color: $light-text
                     background: $bio-dark
+
+
 
 @import "slideshow"
 

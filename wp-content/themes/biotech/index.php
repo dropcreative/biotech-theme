@@ -25,32 +25,52 @@ get_header(); ?>
         </header>
         <?php endif; ?>
 
+<ul class="slideshow">
+<li><img  src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg"/></li>
 
-        <div class="wrap">
-            <header>
-                <label for="slide-1-trigger">Slide 1</label>
-                <label for="slide-2-trigger">Slide 2</label>
-                <label for="slide-3-trigger">Slide 3</label>
-                <label for="slide-4-trigger">Slide 4</label>
-            </header>
-            <input id="slide-1-trigger" class="slide-check" type="radio" name="slides"  checked>
-            <section class="slide slide-one" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image1.jpg')">
-                <h1>Headline One</h1>
-            </section>
-            <input id="slide-2-trigger" class="slide-check" type="radio" name="slides">
-            <section class="slide slide-two" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image2.jpg')" >
-                <h1>Headline Two</h1>
-            </section>
-            <input id="slide-3-trigger" class="slide-check" type="radio" name="slides">
-            <section class="slide slide-three" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image3.jpg')" >
-                <h1>Headline 3</h1>
-            </section>
-            <input id="slide-4-trigger" class="slide-check" type="radio" name="slides">
-            <section class="slide slide-four" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image4.jpg')" >
-                <h1>Headline four</h1>
-            </section>
+</ul>
 
-        </div>
+<ul class="slideshow-second">
+<li><div class="slideshow-text"><h2>TEXT SAMPLE</h2></div></li>
+
+</ul>
+<!--
+        <ul id="slippry-demo">
+            <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg" alt="" class="active-slide"></li>
+           <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image2.jpg" alt="" ></li>
+          <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image3.jpg" alt=""></li>
+            <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image4.jpg" alt="" ></li>
+-->
+
+
+            <!--
+<header>
+<label for="slide-1-trigger">Slide 1</label>
+<label for="slide-2-trigger">Slide 2</label>
+<label for="slide-3-trigger">Slide 3</label>
+<label for="slide-4-trigger">Slide 4</label>
+</header>
+-->
+            <!--
+<input id="slide-1-trigger" class="slide-check" type="radio" name="slides"  checked>
+<section class="slide slide-one" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image1.jpg')">
+<h1>Headline One</h1>
+</section>
+<input id="slide-2-trigger" class="slide-check" type="radio" name="slides">
+<section class="slide slide-two" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image2.jpg')" >
+<h1>Headline Two</h1>
+</section>
+<input id="slide-3-trigger" class="slide-check" type="radio" name="slides">
+<section class="slide slide-three" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image3.jpg')" >
+<h1>Headline 3</h1>
+</section>
+<input id="slide-4-trigger" class="slide-check" type="radio" name="slides">
+<section class="slide slide-four" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image4.jpg')" >
+<h1>Headline four</h1>
+</section>
+-->
+
+<!--        </ul>-->
 
 
         <?php /* Start the Loop */ ?>
@@ -80,4 +100,5 @@ get_template_part( 'template-parts/content', get_post_format() );
 </div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

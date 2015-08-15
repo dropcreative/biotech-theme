@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){});
+jQuery(document).ready(function($){$(".slideshow").sss({slideShow:!0,startOn:0,transition:400,speed:3500,showNav:!0})});
