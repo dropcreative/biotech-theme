@@ -36,68 +36,12 @@ $small-padding: 5vw
 
 $google-font: 'Raleway', sans-serif
 
-@mixin light-icon-color
-    color: $icon-light
-    &:hover
-        color: $icon-light-hover
-
-@mixin dark-icon-color
-    color: $icon-dark
-    &:hover
-        color: $icon-dark-hover
-
-@mixin small-hide
-    @media screen and (min-width: $small-screen)
-        display: none
-
-@mixin small-show
-    @media screen and (max-width: $small-screen)
-        display: none
-
-@mixin submenu
-.hover-menu
-    $large-screen: em(860)
-    $submenu-width: 10em
-    overflow: visible
-    padding-right: 0
-    @include media($large-screen)
-        position: relative
-    .hover-menu-item
-        left: 0
-        position: relative
-    .submenu
-        display: none
-        margin: 0
-        padding-left: 0
-        padding-top: 20px
-        left: 0
-        position: absolute
-    .submenu li
-        display: block
-        padding-right: 0
-    .submenu li a
-        display: inline-block
-        text-align: right
-        width: 100%
-        @include media($large-screen)
-            text-align: left
-            width: $submenu-width
-    .submenu .submenu
-        @include media($large-screen)
-            left: $submenu-width
-            top: 0
-    &:focus > .submenu,
-    &:hover > .submenu
-        display: block
-
-@mixin slideshow-height
-    @media screen and (min-width: $tiny-screen)
-        height: 180px
-    @media screen and (min-width: $small-screen)
-        height: 260px
-    @media screen and (min-width: $medium-screen)
-        height: 300px
-    @media screen and (min-width: $large-screen)
-        height: 400px
-
-@mixin social-conatiner-height
+//FOOTER Variables
+$base-spacing: 1.5em !default
+$action-color: #0D8D8F !default
+$medium-screen: em(640) !default
+$large-screen: em(860) !default
+$footer-background: desaturate(darken($action-color, 20%), 30%)
+$footer-color: $light-text
+$footer-link-color: transparentize($footer-color, 0.6)
+$footer-disclaimer-color: transparentize($footer-color, 0.6)

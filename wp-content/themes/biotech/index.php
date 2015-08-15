@@ -17,6 +17,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
+<!--
         <?php if ( have_posts() ) : ?>
 
         <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -24,6 +25,7 @@ get_header(); ?>
             <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
         </header>
         <?php endif; ?>
+-->
 
 <ul class="slideshow">
 <li><img  src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg"/></li>
@@ -35,6 +37,8 @@ get_header(); ?>
 
 </ul>
 
+
+<!--Visual Grid Section Start-->
 <div class="grid-items-lines">
   <a href="javascript:void(0)" class="grid-item">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
@@ -80,45 +84,14 @@ get_header(); ?>
   <div class="bottom-cover"></div>
 </div>
 
+<!--Visual Grid Section End-->
+
+
+
+
+
+
 <!--
-        <ul id="slippry-demo">
-            <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg" alt="" class="active-slide"></li>
-           <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image2.jpg" alt="" ></li>
-          <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image3.jpg" alt=""></li>
-            <li><a href="#slide1"><img src="<?php echo get_bloginfo('template_directory');?>/img/image4.jpg" alt="" ></li>
--->
-
-
-            <!--
-<header>
-<label for="slide-1-trigger">Slide 1</label>
-<label for="slide-2-trigger">Slide 2</label>
-<label for="slide-3-trigger">Slide 3</label>
-<label for="slide-4-trigger">Slide 4</label>
-</header>
--->
-            <!--
-<input id="slide-1-trigger" class="slide-check" type="radio" name="slides"  checked>
-<section class="slide slide-one" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image1.jpg')">
-<h1>Headline One</h1>
-</section>
-<input id="slide-2-trigger" class="slide-check" type="radio" name="slides">
-<section class="slide slide-two" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image2.jpg')" >
-<h1>Headline Two</h1>
-</section>
-<input id="slide-3-trigger" class="slide-check" type="radio" name="slides">
-<section class="slide slide-three" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image3.jpg')" >
-<h1>Headline 3</h1>
-</section>
-<input id="slide-4-trigger" class="slide-check" type="radio" name="slides">
-<section class="slide slide-four" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/image4.jpg')" >
-<h1>Headline four</h1>
-</section>
--->
-
-<!--        </ul>-->
-
-
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -141,10 +114,11 @@ get_template_part( 'template-parts/content', get_post_format() );
         <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; ?>
+-->
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!--<?php get_sidebar(); ?>-->
 
 <?php get_footer(); ?>
