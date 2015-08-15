@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -113,6 +114,12 @@ IMG {
         line-height: 60px;
         text-transform: uppercase;
         color: #000; }
+        .main-navigation .navigation-wrapper .mobile-nav-wrapper .navigation-menu-button:before {
+          content: "";
+          font-family: Ionicons;
+          font-size: 18px;
+          color: black;
+          padding-right: 5px; }
         @media screen and (min-width: 48em) {
           .main-navigation .navigation-wrapper .mobile-nav-wrapper .navigation-menu-button {
             display: none; } }

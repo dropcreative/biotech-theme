@@ -117,10 +117,11 @@ add_action( 'widgets_init', 'biotech_widgets_init' );
 function biotech_styles(){
 
    wp_enqueue_style ( 'reset', get_template_directory_uri() . '/css/reset.css' );
-   wp_enqueue_style ( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' );
+   wp_enqueue_style ( 'ionicons', get_template_directory_uri() . '/css/ionicons.css' );
    wp_enqueue_style ( 'goodvibes_font', '//fonts.googleapis.com/css?family=Great+Vibes' );
     wp_enqueue_style ( 'raleway_font', '//fonts.googleapis.com/css?family=Raleway' );
-   wp_enqueue_style ( 'biotech', get_template_directory_uri() . '/css/main.css' );
+    wp_enqueue_style ( 'biotech', get_template_directory_uri() . '/css/main.css' );
+
 
 
 
