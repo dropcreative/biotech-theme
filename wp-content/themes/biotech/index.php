@@ -29,7 +29,7 @@ get_header(); ?>
 
 <ul id="slideshow">
 <li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image1.jpg"/></li>
-<li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image2.jpg"/></li>
+<li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image2.jpg"/>TEST</li>
 <li ><img  src="<?php echo get_bloginfo('template_directory');?>/img/image3.jpg"/></li>
 
 </ul>
