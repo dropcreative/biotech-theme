@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){$(function(){var e=5e3,n=1e3,t=$("#slideshow"),i=t.children("li"),d=i.length,f=0,o=function(){i.eq(f).fadeOut(n,function(){f+=1,f===d&&(f=0),i.eq(f).fadeIn(n)})};i.not(":first").hide(),setInterval(o,e)})});
+jQuery(document).ready(function($){var e=document.getElementById("slideshow"),n=function(){for(var n=0;n<e.children.length;n++)e.className="TEST"};n()});

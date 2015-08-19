@@ -34,10 +34,12 @@ get_header(); ?>
 
 </ul>
 
+<!--
 <ul id="slideshow-second">
 <li><div class="slideshow-text"><h2>TEXT SAMPLE</h2></div></li>
 
 </ul>
+-->
 
 
 <!--Visual Grid Section Start-->
